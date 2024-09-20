@@ -1,0 +1,35 @@
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: lightgray;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 2%;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.form button:hover {
+  background-color: darkgray;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
