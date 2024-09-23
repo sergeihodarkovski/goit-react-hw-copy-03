@@ -2,20 +2,20 @@ import s from "./Contact.module.css";
 import { BiSolidPhone } from "react-icons/bi";
 import { BiSolidUser } from "react-icons/bi";
 
-const Contact = ({ name, number }) => {
+const Contact = ({ id, name, number, onClick }) => {
   return (
-    <li>
+    <li className={s.item}>
       <div>
         <p>
-          <BiSolidUser />
-          {name}
+          <BiSolidUser /> {name}
         </p>
         <p>
-          <BiSolidPhone />
-          {number}
+          <BiSolidPhone /> {number}
         </p>
       </div>
-      <button>Delete</button>
+      <button className={s.button} onClick={onClick}>
+        Delete
+      </button>
     </li>
   );
 };

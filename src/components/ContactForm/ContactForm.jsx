@@ -2,9 +2,10 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import s from "./ContactForm.module.css";
 import * as Yup from "yup";
 
-const ContactForm = () => {
+const ContactForm = ({ onAddContact }) => {
   const initialValues = { name: "", number: "" };
   const handleSubmit = (values, options) => {
+    onAddContact(values);
     options.resetForm();
   };
 
